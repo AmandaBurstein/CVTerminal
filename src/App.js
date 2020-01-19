@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
+import Button from "./CommonComponents/Button";
 
 function App() {
-  return <div>CV Terminal!</div>;
+  return <Button />;
 }
 
 export default App;
