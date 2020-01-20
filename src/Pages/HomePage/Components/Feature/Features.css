@@ -1,0 +1,41 @@
+.FeaturesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: calc(10px + 5vw) 0;
+  background-color: #ffffff;
+}
+
+.FeaturesWrapper h2 {
+  color: #1d293f;
+  font-size: calc(18px + 3vw);
+  font-weight: 900;
+  margin: 0;
+}
+
+.FeaturesWrapper h5 {
+  width: calc(220px + 20vw);
+  color: #7c8087;
+  font-size: calc(10px + 1vw);
+  font-weight: 300;
+  margin: 2vw;
+}
+
+.FeatureCard {
+  display: flex;
+  justify-content: center;
+  background: #f7f8fa;
+  border-radius: 10px;
+}
+
+.FeatureCardRow {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin: 5vw 0;
+}
