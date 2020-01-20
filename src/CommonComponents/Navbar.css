@@ -1,0 +1,32 @@
+.navbar-wrapper {
+  position: absolute;
+  width: 1474px;
+  height: 80px;
+  left: 58px;
+  top: 33px;
+}
+
+.logo {
+  position: absolute;
+  width: 229px;
+  height: 84px;
+  left: 39px;
+  top: 1px;
+}
+
+.support-button {
+  position: absolute;
+  height: 28px;
+  left: 73.21%;
+  right: 14.38%;
+  top: calc(50% - 28px / 2 - 4px);
+  /* identical to box height, or 175% */
+}
+
+.start-button {
+  position: absolute;
+  left: 88.47%;
+  right: 0%;
+  top: 21.25%;
+  bottom: 27.5%;
+}
