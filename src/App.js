@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "./CommonComponents/Button";
+import HomePage from "./Pages/HomePage/HomePage.jsx";
 
 function App() {
-  return <Button />;
+  return <HomePage />;
 }
 
 export default App;

@@ -1,12 +1,30 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Button } from "./Button.jsx";
-
-//The navbar will have the CV Terminal logo, a link to the Support page and a Start button
+import Button from "./Button";
+import "./Navbar.css";
 
 class Navbar extends Component {
   render = () => {
-    return <Button />;
+    return (
+      <div className="navbar-wrapper">
+        <div className="logo">
+          <img src="./HomePageLogo.svg" alt="CV Terminal Logo"></img>
+        </div>
+        <div className="support-button">
+          <Button
+            label="Support"
+            backgroundColor="#f7f8fa"
+            color="#1D293F"
+            border="none"
+            textAlign="right"
+            fontWeight="normal"
+            lineHeight="28px"
+          />
+        </div>
+        <div className="start-button">
+          <Button label="Start" />
+        </div>
+      </div>
+    );
   };
 }
 
