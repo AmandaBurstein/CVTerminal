@@ -46,8 +46,8 @@ export class Features extends Component {
   render() {
     return (
       <div className="FeaturesWrapper">
-        <h2>Solution made for you</h2>
-        <h5>A simple and straight forward approach for creating a modern CV</h5>
+        <h2> A solution made for you</h2>
+        <h5>A simple and straightforward approach for creating a modern CV</h5>
         <div className="FeatureCardRow">
           {_features.map(feature => {
             return (

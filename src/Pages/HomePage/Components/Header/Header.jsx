@@ -7,17 +7,19 @@ class Header extends Component {
     return (
       <div className="homepage-header-wrapper">
         <div className="content-wrapper">
-          <div className="header-text-large">
-            Quickly generate your CV in minutes
+          <div className="text-wrapper">
+            <div className="header-text-large">
+              Quickly generate your CV in minutes
+            </div>
+            <div className="header-text-small">
+              We've helped over 25,000 people generate a modern, job-ready CV
+            </div>
+            <div className="homepage-button">
+              <Button label="Start" />
+            </div>
           </div>
-          <div className="header-text-small">
-            We've helped over 25,000 people generate a modern, job-ready CV
-          </div>
-          <div className="homepage-button">
-            <Button label="Start" />
-          </div>
+          <img src="./Demo.svg" className="header-demo-image" alt="Demo"></img>
         </div>
-        <img src="./Demo.svg" className="header-demo-image" alt="Demo"></img>
       </div>
     );
   };

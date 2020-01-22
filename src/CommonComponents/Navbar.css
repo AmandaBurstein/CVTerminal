@@ -1,32 +1,25 @@
 .navbar-wrapper {
-  position: absolute;
-  width: 1474px;
-  height: 80px;
-  left: 58px;
-  top: 33px;
+  display: flex;
+  background-color: #f7f8fa;
 }
 
 .logo {
-  position: absolute;
-  width: 229px;
-  height: 84px;
-  left: 39px;
-  top: 1px;
+  display: flex;
+  margin-left: 58px;
+  margin-top: 33px;
+  z-index: 100;
 }
 
 .support-button {
+  background-color: transparent;
   position: absolute;
-  height: 28px;
-  left: 73.21%;
-  right: 14.38%;
-  top: calc(50% - 28px / 2 - 4px);
-  /* identical to box height, or 175% */
+  right: 280px;
+  top: 55px;
 }
-
 .start-button {
   position: absolute;
-  left: 88.47%;
-  right: 0%;
-  top: 21.25%;
-  bottom: 27.5%;
+  right: 68px;
+  top: 46px;
+  width: 170px;
+  height: 45px;
 }
