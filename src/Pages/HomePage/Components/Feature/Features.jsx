@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Features.css";
 import FeatureCard from "./FeatureCard";
 import { RandomNumberGenerator } from "../../../../Functions/RandomNumberGenerator";
+import Line from "../../../../CommonComponents/Line";
 
 const _features = [
   {
@@ -45,25 +46,30 @@ const _features = [
 export class Features extends Component {
   render() {
     return (
-      <div className="FeaturesWrapper">
-        <h2> A solution made for you</h2>
-        <h5>A simple and straightforward approach for creating a modern CV</h5>
-        <div className="FeatureCardRow">
-          {_features.map(feature => {
-            return (
-              <FeatureCard
-                key={RandomNumberGenerator(6)}
-                title={feature.title}
-                description={feature.description}
-                src={feature.iconURL}
-                margin="calc(5px + 1vw)"
-                padding="calc(5px + 1vw)"
-                width="calc(200px + 10vw)"
-              />
-            );
-          })}
+      <React.Fragment>
+        <div className="FeaturesWrapper">
+          <h2> A solution made for you</h2>
+          <h5>
+            A simple and straightforward approach for creating a modern CV
+          </h5>
+          <div className="FeatureCardRow">
+            {_features.map(feature => {
+              return (
+                <FeatureCard
+                  key={RandomNumberGenerator(6)}
+                  title={feature.title}
+                  description={feature.description}
+                  src={feature.iconURL}
+                  margin="calc(5px + 1vw)"
+                  padding="calc(5px + 1vw)"
+                  width="calc(200px + 10vw)"
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
+        <Line />
+      </React.Fragment>
     );
   }
 }
