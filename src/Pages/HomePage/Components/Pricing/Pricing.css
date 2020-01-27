@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
 }
+
 .pricing-header {
   display: flex;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -76,6 +76,7 @@
   width: 1170px;
   height: 463px;
   margin-top: 44px;
+  z-index: 100;
 }
 
 .price-table-header {

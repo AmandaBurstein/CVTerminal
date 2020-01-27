@@ -35,7 +35,7 @@ export default class Pricing extends Component {
               className={this.state.yearly ? "toggle-on" : "toggle-off"}
               onClick={this.togglePaymentYearly}
             >
-              Annual
+              Annually
             </button>
           </div>
         </div>
