@@ -14,11 +14,7 @@ export default class Footer extends Component {
             <div className="copy1">
               Your ultimate CV solution to clinch <br></br> the job
             </div>
-            <Button
-              label="Ask a Question"
-              width="190px"
-              className="question-button"
-            />
+            <Button label="Ask a Question" width="190px" />
           </div>
           <div className="column2">
             <div className="header">About Us</div>
