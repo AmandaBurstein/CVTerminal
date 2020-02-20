@@ -1,0 +1,128 @@
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 5px;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 500px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(19, 58, 81, 0.1);
+  border-radius: 15px;
+  border: none;
+  font-family: Poppins;
+  font-size: 14px;
+  outline: none;
+}
+
+.section-button {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 40px;
+  width: 125px;
+  font-family: Poppins;
+  font-size: 14px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.details-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.done-button {
+  outline: none;
+  cursor: pointer;
+  background-color: #f9fafe;
+  border: 1px solid #ebedf4;
+  height: 50px;
+  font-family: Poppins;
+  font-size: 14px;
+  margin-top: 15px;
+  border-radius: 4px;
+  color: #748aa1;
+}
+
+.drop-title {
+  margin-left: 10px;
+}
+
+.arrow {
+  position: absolute;
+  right: 15px;
+}
+
+.logo {
+  margin-left: 15px;
+}
+
+.menu {
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #efc460;
+  padding-bottom: 20px;
+}
+
+.add-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.input {
+  border: 1px solid #ebedf4;
+  border-radius: 4px;
+  margin-top: 20px;
+  height: 60px;
+  padding-left: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #ebedf4;
+}
+
+.add-header {
+  font-family: Poppins;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  color: #748aa1;
+}
+
+.add-button {
+  background-color: #4a5466;
+  border: none;
+  color: white;
+  outline: none;
+  border-radius: 25px;
+  height: 40px;
+  font-family: Poppins;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
