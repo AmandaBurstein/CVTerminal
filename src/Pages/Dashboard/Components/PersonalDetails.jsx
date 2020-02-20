@@ -1,16 +1,26 @@
 import React, { Component } from "react";
 import "./PersonalDetails.css";
+import DetailsModal from "./DetailsModal.jsx";
 
 export default class PersonalDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showMenu: false
+      showMenu: false,
+      showModal: false
     };
   }
 
   showDroplist = () => {
     this.setState({ showMenu: !this.state.showMenu });
+  };
+
+  showModal = () => {
+    this.setState({ showModal: true });
+  };
+
+  closeModal = () => {
+    this.setState({ showModal: false });
   };
 
   render() {
@@ -41,7 +51,19 @@ export default class PersonalDetails extends Component {
             </div>
           </div>
         ) : null}
-        <button className="section-button">Add Section</button>
+        <button className="section-button" onClick={this.showModal}>
+          Add Section
+        </button>
+        <div className={this.state.showModal ? "mask" : null}>
+          {this.state.showModal ? (
+            <div className="modal">
+              <DetailsModal />
+              <button className="close-modal" onClick={this.closeModal}>
+                x
+              </button>
+            </div>
+          ) : null}
+        </div>
       </div>
     );
   }

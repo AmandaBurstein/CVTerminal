@@ -1,0 +1,47 @@
+.add-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  color: #7c8087;
+  font-family: Poppins;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.button-wrapper {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-content: center;
+}
+
+.add-section {
+  background-color: #39414f;
+  color: white;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 200px;
+  width: 250px;
+}
+
+.add-custom {
+  background-color: #ffd166;
+  color: #39414f;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
