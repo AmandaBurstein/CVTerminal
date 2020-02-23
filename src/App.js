@@ -1,17 +1,12 @@
-import React, { Component } from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import React from "react";
 import HomePage from "./Pages/HomePage/HomePage.jsx";
-import Dashboard from "./Pages/Dashboard/Components/Education";
 
-class App extends Component {
-  render = () => {
-    return (
-      <BrowserRouter>
-        <Route exact={true} path="/" component={HomePage} />
-        <Route exact={true} path="/dashboard" component={Dashboard} />
-      </BrowserRouter>
-    );
-  };
+function App() {
+  return (
+    <React.Fragment>
+      <HomePage />
+    </React.Fragment>
+  );
 }
 
 export default App;
