@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import ContentContainer from "../../../../CommonComponents/ContentContainer";
-import InputBox from "../../../../CommonComponents/InputBox";
-import Button from "../../../../CommonComponents/Button";
+import ContentContainer from "../../../CommonComponents/ContentContainer";
+import InputBox from "../../../CommonComponents/InputBox";
+import Button from "../../../CommonComponents/Button";
 
 const skills = ["HTML", "CSS", "RUBY", "JAVA", "SWIFT", "KOTLIN"];
 
 export class Skills extends Component {
-  handleEnteredInput = event => {
+  handleEnteredInput = (event, name) => {
     console.log(event.target.value);
   };
 
@@ -20,7 +20,7 @@ export class Skills extends Component {
         <InputBox
           placeholder="Enter your skills separated by comma"
           type="text"
-          onChange={e => this.handleEnteredInput(e)}
+          onChange={(e, n) => this.handleEnteredInput((e, n))}
           autoComplete={true}
           size="100px"
         />

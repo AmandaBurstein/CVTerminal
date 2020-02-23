@@ -21,17 +21,14 @@ class Button extends Component {
     cursor: "pointer"
   };
 
-  buttonClicked = (event, label) => {
+  buttonClicked = event => {
     event.preventDefault();
-    this.props.onClick(event, label);
+    this.props.onClick(event, this.props.label);
   };
 
   render = () => {
     return (
-      <button
-        style={this.style}
-        onClick={event => this.buttonClicked(event, this.props.label)}
-      >
+      <button style={this.style} onClick={this.buttonClicked}>
         {this.props.label ? this.props.label : "no label"}
       </button>
     );

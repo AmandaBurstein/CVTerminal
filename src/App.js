@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage.jsx";
-import Dashboard from "./Pages/Dashboard/Components/Skills/Skills";
+import Dashboard from "./Pages/Dashboard/Components/Education";
 
 class App extends Component {
   render = () => {
