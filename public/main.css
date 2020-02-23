@@ -13,3 +13,13 @@ body {
 * {
   box-sizing: border-box;
 }
+
+input {
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 90999f;
+  opacity: 0.5; /* Firefox */
+}

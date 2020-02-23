@@ -4,27 +4,34 @@ class Button extends Component {
   style = {
     backgroundColor: this.props.backgroundColor
       ? this.props.backgroundColor
-      : "#0F53FA",
-    border: this.props.border ? this.props.border : "none",
-    color: this.props.color ? this.props.color : "#E5E5E5",
-    padding: this.props.padding ? this.props.padding : "15px 32px",
+      : "#F9FAFE",
+    border: this.props.border ? this.props.border : "1px solid #FFD166",
+    color: this.props.color ? this.props.color : "#1D293F",
+    padding: this.props.padding ? this.props.padding : "15px 30px",
+    margin: this.props.margin ? this.props.margin : "15px",
     textAlign: this.props.textAlign ? this.props.textAlign : "center",
     textDecoration: this.props.textDecoration,
     display: this.props.display ? this.props.display : "inline-block",
-    borderRadius: this.props.borderRadius ? this.props.borderRadius : "5px",
-    fontSize: this.props.fontSize ? this.props.fontSize : "16px",
-    fontStyle: this.props.fontStyle ? this.props.fontStyle : "normal",
-    fontWeight: this.props.fontWeight ? this.props.fontWeight : "500",
-    fontFamily: this.props.fontFamily ? this.props.fontFamily : "Poppins",
+    borderRadius: this.props.borderRadius ? this.props.borderRadius : "50px",
+    fontSize: this.props.fontSize ? this.props.fontSize : "12px",
+    fontWeight: this.props.fontWeight ? this.props.fontWeight : "bold",
     height: this.props.height,
-    width: this.props.width ? this.props.width : "200px",
+    width: this.props.width,
     outline: "none",
     cursor: "pointer"
   };
 
+  buttonClicked = (event, label) => {
+    event.preventDefault();
+    this.props.onClick(event, label);
+  };
+
   render = () => {
     return (
-      <button style={this.style}>
+      <button
+        style={this.style}
+        onClick={event => this.buttonClicked(event, this.props.label)}
+      >
         {this.props.label ? this.props.label : "no label"}
       </button>
     );
