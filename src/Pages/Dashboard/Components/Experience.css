@@ -1,0 +1,35 @@
+.location {
+  display: flex;
+}
+
+.city {
+  margin-right: 5px;
+}
+
+.country {
+  margin-left: 5px;
+}
+
+.duties {
+  max-width: 280px;
+  min-width: 280px;
+  border: 1px solid #ebedf4;
+  border-radius: 5px;
+  color: #c1c4ca;
+  font-family: Poppins;
+  font-size: 14px;
+  padding: 10px;
+  outline: none;
+}
+
+.dates {
+  display: flex;
+}
+
+.start {
+  margin-right: 5px;
+}
+
+.end {
+  margin-left: 5px;
+}
