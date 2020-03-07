@@ -1,11 +1,11 @@
 import React from "react";
 // import HomePage from "./Pages/HomePage/HomePage.jsx";
-import Projects from "./Pages/Dashboard/Components/Projects";
+import Courses from "./Pages/Dashboard/Components/Courses";
 
 function App() {
   return (
     <React.Fragment>
-      <Projects />
+      <Courses />
     </React.Fragment>
   );
 }
