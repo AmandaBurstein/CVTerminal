@@ -1,10 +1,11 @@
 import React from "react";
-import HomePage from "./Pages/HomePage/HomePage.jsx";
+// import HomePage from "./Pages/HomePage/HomePage.jsx";
+import Projects from "./Pages/Dashboard/Components/Projects";
 
 function App() {
   return (
     <React.Fragment>
-      <HomePage />
+      <Projects />
     </React.Fragment>
   );
 }

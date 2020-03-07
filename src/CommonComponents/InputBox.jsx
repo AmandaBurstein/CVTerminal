@@ -7,7 +7,12 @@ export class InputBox extends Component {
 
   inputBoxStyle = {
     width: this.props.width ? this.props.width : "100%",
-    height: this.props.height ? this.props.height : "50px",
+    height:
+      this.props.rows || this.props.cols
+        ? null
+        : this.props.height
+        ? this.props.height
+        : "50px",
     margin: this.props.margin ? this.props.margin : "5px 0",
     padding: this.props.padding ? this.props.padding : "10px",
     color: this.props.color,
@@ -18,7 +23,7 @@ export class InputBox extends Component {
   };
 
   render() {
-    return this.props.rows ? (
+    return this.props.rows || this.props.cols ? (
       <textarea
         style={this.inputBoxStyle}
         defaultValue={this.props.value}
