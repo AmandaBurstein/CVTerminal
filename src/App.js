@@ -1,11 +1,11 @@
 import React from "react";
 // import HomePage from "./Pages/HomePage/HomePage.jsx";
-import Publication from "./Pages/Dashboard/Components/Publication";
+import References from "./Pages/Dashboard/Components/References";
 
 function App() {
   return (
     <React.Fragment>
-      <Publication />
+      <References />
     </React.Fragment>
   );
 }
